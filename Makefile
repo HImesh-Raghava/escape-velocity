@@ -9,10 +9,10 @@ EXEC = escape_v
 all: $(EXEC)
 
 $(EXEC): $(OBJ)
-    $(CC) $(OBJ) -o $@ $(LDFLAGS)
+	$(CC) $(OBJ) -o $@ $(LDFLAGS)
 
 %.o: %.c game.h
-    $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-    rm -f $(OBJ) $(EXEC)
+	rm -f $(OBJ) $(EXEC)
